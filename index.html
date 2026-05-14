@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallel text browser</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Parallel text browser</h1>
+        <div class="controls">
+            <div class="view-toggles">
+                <label><input type="checkbox" checked data-lang="de"> DE</label>
+                <label><input type="checkbox" checked data-lang="pl"> PL</label>
+                <label><input type="checkbox" checked data-lang="fr"> FR</label>
+            </div>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search...">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="column" id="col-de">
+            <div class="column-header">GERMAN</div>
+            <div class="content" id="content-de"></div>
+        </section>
+
+        <section class="column" id="col-pl">
+            <div class="column-header">POLISH</div>
+            <div class="content" id="content-pl"></div>
+        </section>
+
+        <section class="column" id="col-fr">
+            <div class="column-header">FRENCH</div>
+            <div class="content" id="content-fr"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
