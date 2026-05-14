@@ -173,6 +173,13 @@ main {
     .controls {
         width: 100%;
         gap: 0.4rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search-container {
+        width: 100%;
+        max-width: none;
     }
 
     #search-input {
