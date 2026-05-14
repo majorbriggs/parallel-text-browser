@@ -131,6 +131,25 @@ main {
     background-color: #ccc;
 }
 
+.pdf-content {
+    padding: 0;
+    overflow: auto;
+    height: 100%;
+    background: #525659;
+    display: flex;
+    justify-content: center;
+}
+
+#pdf-container {
+    padding: 20px;
+}
+
+#pdf-canvas {
+    display: block;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    max-width: 100%;
+}
+
 .para {
     font-family: 'Lora', serif;
     font-size: 0.95rem;

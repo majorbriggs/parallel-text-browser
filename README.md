@@ -19,6 +19,8 @@ This repository is an experimental showcase of modern AI-driven development work
 -   **Synchronized Scrolling**: Click any paragraph in one language to automatically scroll and highlight the corresponding section in all visible languages.
 -   **Historical Aesthetic**: A monochromatic, serif-based design optimized for long-form reading and manuscript digital preservation.
 -   **Mobile-First Design**: Automatically switches to a tabbed interface on smartphones, allowing for seamless language "flipping" while staying on the same paragraph.
+-   **Integrated PDF Viewer**: Toggle the original 1841 manuscript PDF side-by-side with the translated text.
+-   **Full Synchronization**: Clicking any paragraph not only syncs the translations but also automatically jumps the PDF viewer to the corresponding page in the original document.
 -   **Global Search**: Instant search across all languages with synchronized highlighting.
 -   **Column Controls**: Toggle specific languages (DE, PL, FR) on and off to customize your comparison view.
 

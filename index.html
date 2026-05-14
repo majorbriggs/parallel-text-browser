@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rudolph Kühnapfel</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 </head>
+
 <body>
     <header>
         <h1>Rudolph Kühnapfel</h1>
@@ -15,6 +18,7 @@
                 <label><input type="checkbox" checked data-lang="de"> DE</label>
                 <label><input type="checkbox" checked data-lang="pl"> PL</label>
                 <label><input type="checkbox" checked data-lang="fr"> FR</label>
+                <label><input type="checkbox" checked data-lang="pdf"> PDF</label>
             </div>
             <div class="search-container">
                 <input type="text" id="search-input" placeholder="Search...">
@@ -37,8 +41,18 @@
             <div class="column-header">FRENCH</div>
             <div class="content" id="content-fr"></div>
         </section>
+
+        <section class="column hidden" id="col-pdf">
+            <div class="column-header">ORIGINAL PDF</div>
+            <div class="content pdf-content">
+                <div id="pdf-container">
+                    <canvas id="pdf-canvas"></canvas>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="app.js"></script>
 </body>
+
 </html>
